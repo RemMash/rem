@@ -2,5 +2,6 @@
     <qresource prefix="/image">
         <file>resource/img/background.jpg</file>
         <file>resource/img/ico.png</file>
+        <file>resource/img/sign.svg</file>
     </qresource>
 </RCC>
