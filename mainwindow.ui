@@ -17,7 +17,7 @@
    <bool>false</bool>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/image/background.jpg);</string>
+   <string notr="true">background-image: url(:/image/resource/img/background.jpg);</string>
   </property>
   <widget class="QWidget" name="centralWidget"/>
  </widget>
