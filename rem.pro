@@ -25,10 +25,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    abstracvalidator.cpp
+    abstracvalidator.cpp \
+    signinvalidator.cpp \
+    database.cpp
 
 HEADERS  += mainwindow.h \
-    abstracvalidator.h
+    abstracvalidator.h \
+    signinvalidator.h \
+    database.h
 
 FORMS    += mainwindow.ui
 

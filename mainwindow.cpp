@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include "QPixmap"
 #include "QPalette"
+#include "signinvalidator.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),

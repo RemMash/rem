@@ -52,7 +52,7 @@
      <string>ВХОД</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="signin">
     <property name="geometry">
      <rect>
       <x>270</x>
@@ -87,7 +87,30 @@
      <string notr="true">background-image: url(:/image/resource/img/background.jpg);</string>
     </property>
     <property name="text">
-     <string>Введите уникальный пароль</string>
+     <string>Введите уникальный пароль (8 символов)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="error_block">
+    <property name="geometry">
+     <rect>
+      <x>960</x>
+      <y>710</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Narrow</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>true</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="text">
+     <string>Ошибок нет</string>
     </property>
    </widget>
   </widget>
