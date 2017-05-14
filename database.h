@@ -4,6 +4,8 @@
 #include <QtSql/QSqlDatabase>
 #include <QException>
 #include <QMessageBox>
+#include <QDebug>
+#include <QSqlQuery>
 
 class DataBase
 {
@@ -11,8 +13,9 @@ public:
     DataBase(QString host, QString user, QString passwd, QString dbName);
 private:
     QSqlDatabase *db;
+    bool connectDb();
 public:
-    void createConnectToDb();
+    bool selectIntoDb();
 };
 
 #endif // DATABASE_H

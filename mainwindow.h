@@ -18,6 +18,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    DataBase *handleDb;
 public slots:
     void connectDb();
 

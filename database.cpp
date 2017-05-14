@@ -10,16 +10,32 @@ DataBase::DataBase(QString host, QString user, QString passwd, QString dbName)
     db->setUserName(user);
     db->setPassword(passwd);
     db->setPort(3306);
+
+    if (!this->connectDb())
+        QMessageBox::Abort;
 }
 
-void DataBase::createConnectToDb()
+bool DataBase::connectDb()
 {
-    bool connected = db->open();
+    bool connected = this->db->open();
 
     if (!connected)
-    {
-        QMessageBox::Abort;
+        return false;
 
-        return;
+    return true;
+}
+
+
+bool DataBase::selectIntoDb()
+{
+    QSqlQuery *query = new QSqlQuery(*this->db);
+
+    query->exec("SELECT passwords.password FROM passwords WHERE passwords.id = 1");
+
+    while (query->next())
+    {
+        QString passwd = query->value(0).toString();
+
+        qDebug() << passwd;
     }
 }
