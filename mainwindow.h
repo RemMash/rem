@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "database.h"
+//#include "database.h"
 
 namespace Ui {
 class MainWindow;
@@ -18,9 +18,9 @@ public:
 
 private:
     Ui::MainWindow *ui;
-    DataBase *handleDb;
+    //DataBase *handleDb;
 public slots:
-    void connectDb();
+    //void connectDb();
 
 };
 

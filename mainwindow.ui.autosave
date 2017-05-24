@@ -341,18 +341,68 @@
       </item>
      </layout>
     </widget>
-    <widget class="QLabel" name="label_11">
+    <widget class="QWidget" name="horizontalLayoutWidget_11">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>20</y>
-       <width>249</width>
-       <height>29</height>
+       <x>10</x>
+       <y>390</y>
+       <width>251</width>
+       <height>31</height>
       </rect>
      </property>
-     <property name="text">
-      <string>1.3 Сведения о размещение объекта</string>
+     <layout class="QHBoxLayout" name="horizontalLayout_12">
+      <item>
+       <widget class="QLabel" name="label_11">
+        <property name="text">
+         <string>1.6 Сведения об организации, расположеного</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget_16">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>430</y>
+       <width>256</width>
+       <height>31</height>
+      </rect>
      </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_17">
+      <item>
+       <widget class="QLabel" name="label_16">
+        <property name="text">
+         <string>Юр. адрес</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_13"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget_17">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>470</y>
+       <width>631</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_18">
+      <item>
+       <widget class="QLabel" name="label_17">
+        <property name="text">
+         <string>2.9 яpp;ty()</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_14"/>
+      </item>
+     </layout>
     </widget>
    </widget>
   </widget>

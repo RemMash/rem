@@ -4,7 +4,8 @@
 #
 #-------------------------------------------------
 
-QT       += core gui sql
+QT       += core gui
+QTPLUGIN += QMYSQL
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 

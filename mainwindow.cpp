@@ -9,18 +9,10 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    this->handleDb = new DataBase("localhost", "root", "root", "rem");
-
-    connect(ui->pushButton, SIGNAL(clicked(bool)), this, SLOT(connectDb()));
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
-}
-
-void MainWindow::connectDb()
-{
-    this->handleDb->selectIntoDb();
 }
 
